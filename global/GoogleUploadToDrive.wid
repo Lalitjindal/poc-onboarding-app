@@ -1,0 +1,24 @@
+[
+        [
+            "name" : "GoogleUploadToDrive",
+            "displayName" : "GoogleUploadToDrive",
+            "category" : "google-drive-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.workitem.google.drive.MediaUploadWorkitemHandler(\"appName\", \"clentSecret\")",
+            "documentation" : "google-drive-workitem/index.html",
+
+            "parameters" : [
+                                "UploadPath" : new StringDataType()
+                ,"DocMimeType" : new StringDataType()
+                ,"DocToUpload" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:google-drive-workitem:7.28.0.Final"
+
+            ],
+            "icon" : "GoogleUploadToDrive.png"
+
+        ]
+
+]
